@@ -1,0 +1,14 @@
+{
+    "options" : {
+        "keepSpecialComments" : 0
+        , "banner" : "/*! <%= pkg.name %> <%= grunt.template.today('yyyy-mm-dd hh:mm:ss') %> */\n"
+    }
+    , "minify" : {
+    "expand" : true
+    , "cwd" : "dist/css/"
+    , "src" : ["*.css", "!*.min.css"]
+    , "dest": "dist/css/"
+    , "ext" : ".min.css"
+    , "nonull" : true
+}
+}
